@@ -40,6 +40,16 @@
             margin: 25px 25px;
             padding: 25px 25px;
             border-radius: 5px;
+            position: relative;
+        }
+        .check{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .bi-check{
+            background-color: #EB984E;
+            border-radius: 10px;
         }
         .bi-file-earmark{
             background-color: #FDEBD0;
@@ -59,10 +69,12 @@
         }
         .progress{
             background-color: #FDEBD0;
+            border-radius: 5px;
         }
         .progress-bar{
             background-color: #F5B041;
             padding: 5px;
+            border-radius: 5px;
         }
         .grid1 {
         grid-row-gap: 1.5rem;
@@ -84,6 +96,9 @@
         .grid-col-19 {
         grid-column: span 19;
         }
+        .grid-col-21 {
+        grid-column: span 21;
+        }
     </style>
 </head>
 <body>
@@ -97,31 +112,36 @@
         <div class="line"></div>
             <div class="form">
                 <div class="box">
-                        <div class="grid2">
-                        <div class="grid-col-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
-                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
-                        </svg>
-                        </div>
-                        <div class="grid-col-21">
-                            <div class="topic">
-                                Document 1.pdf
+                    <div class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                          </svg>
+                    </div>
+                            <div class="grid1">
+                            <div class="grid-col-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                                <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                            </svg>
                             </div>
-                            <div class="size">
-                                500 KB
-                            </div>
-                                <div class="grid2">
-                                    <div class="grid-col-19">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="grid-col-21">
+                                <div class="topic">
+                                    Document 1.pdf
+                                </div>
+                                <div class="size">
+                                    500 KB
+                                </div>
+                                    <div class="grid2">
+                                        <div class="grid-col-19">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-col-1">
+                                            <span class="percent" style="color: #17202A;">100%</span>
                                         </div>
                                     </div>
-                                    <div class="grid-col-1">
-                                        <span class="percent" style="color: #17202A;">100%</span>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
     </div>
