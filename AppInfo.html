@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Information</title>
+    <style>
+        .header {
+            background-color: #FFFFF9 ;
+            margin: 0;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            border: 2px solid #F8F9F9 ;
+        }
+        .AppInfo{
+            font-size: 30px;
+            font-family: Sans-serif;
+            padding: 10px 30px;
+            padding-top: 100px;
+        }
+        .bacon{
+            font-size: 15px;
+            padding-top: 12px;
+        }
+        /*.header:fullscreen{
+            width: 100vw;
+            height: 100vh;
+        }*/
+        .form{
+            font-family: Sans-serif;
+            background-color: #FDFEFE ;
+            margin: 1rem 1rem;
+            position: absolute;
+            border: 2px solid #F4F6F6;
+            width: 95%;
+            height: 95%;
+        }
+        .line{
+            border-bottom: 2px solid #EBEDEF ;
+            margin: 1rem 1rem;
+        }
+        .line2{
+            border-bottom: 2px solid #EBEDEF ;
+            padding: 20px;
+            margin: 0;
+        }
+        .row{
+            display: grid;
+        }
+        .grid {
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        }
+        .grid-col-2 {
+        grid-column: span 2;
+        }
+        .grid-col-3 {
+        grid-column: span 3;
+        }
+        .grid-col-4 {
+        grid-column: span 4;
+        }
+        .grid-col-5 {
+        grid-column: span 5;
+        }
+        .grid-col-6 {
+        grid-column: span 6;
+        }
+        .grid-col-7 {
+        grid-column: span 7;
+        }
+        .grid-col-8 {
+        grid-column: span 8;
+        }
+        .grid-col-9 {
+        grid-column: span 9;
+        }
+        .grid-col-10 {
+        grid-column: span 10;
+        }
+        .grid-col-11 {
+        grid-column: span 11;
+        }
+        .grid-col-12 {
+        grid-column: span 12;
+        }
+        .john {
+            color: #F8C471;
+            font-size: 30px;
+            font-family: Sans-serif;
+            padding-top: 25px;
+            padding-left: 50px;
+        }
+        .info {
+            color: #17202A;
+            font-size: 20px;
+            font-family: Sans-serif;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+        }
+        #call {
+            font-size: 1rem;
+            padding: 0.5rem 0.5rem;
+            margin-top: 25px;
+            color: #F8C471;
+            background-color: #FDEBD0;
+            border: 1px solid #F8C471;
+            border-radius: 6px;
+            outline: none;
+            width: 90%;
+        }
+        .text{
+            color: #A6ACAF ;
+            padding-left: 50px;
+        }
+        .text2{
+            color: #17202A ;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="AppInfo">
+            Application Information
+            <div class="bacon">
+                Bacon ipsum dolor amet landjaeger turducken pork loin 
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="form">
+            <div class="row">
+                <div class="grid">
+                    <div class="grid-col-10">
+                        <div class="john">John Deo</div> 
+                    </div>
+                    <div class="grid-col-2">
+                        <input type="button" id="call" value="121-231-2121">
+                    </div>
+                    <div class="grid-col-12">
+                        <div class="text">ซื้อที่ดิน-อาคาร</div>
+                        <div class="text">โครงการที่อยู่อาศัยเพื่อมนุษยชาติ</div>
+                    </div>
+                    <div class="grid-col-10">
+                        <div class="text">กรุงเทพมหานครฯ</div>
+                    </div>
+                    <div class="grid-col-2">
+                        <div class="text">
+                            วันที่ร้องขอ
+                            <span class="date" style="color: #17202A;">18/08/2565</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2"></div>
+            <div class="row">
+                <div class="grid">
+                    <div class="grid-col-12">
+                        <div class="info">ข้อมูลการยื่นคำร้องขอประเมิน</div> 
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            สาขารับเรื่อง
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            ศูนย์ DE
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            สาขาพระราม 9
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            สาขาพระราม 9
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            ชื่อผู้รับเรื่อง
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            เจ้าหน้าที่ DE
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            Jane Doe
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            Joseph Doe
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            เบอร์ติดต่อสาขารับเรื่อง
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            เบอร์ติดต่อ DE
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            010-101-0101
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            012-345-6789
+                        </div>
+                    </div>
+                    <div class="grid-col-6">
+                        <div class="text">
+                            ค่าธรรมเนียมการประเมิน
+                        </div>
+                    </div>
+                    <div class="grid-col-6"></div>
+                    <div class="grid-col-6">
+                        <div class="text2">
+                            2,000
+                        </div>
+                    </div>
+                    <div class="grid-col-6"></div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

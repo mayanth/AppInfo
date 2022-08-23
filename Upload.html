@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <style>
+        .header {
+            background-color: #FFFFF9 ;
+            margin: 0;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            border: 2px solid #F8F9F9 ;
+        }
+        .form{
+            font-family: Sans-serif;
+            background-color: #FDFEFE ;
+            margin: 1rem 1rem;
+            position: absolute;
+            border: 2px solid #F4F6F6;
+            width: 95%;
+            height: 95%;
+        }
+        .File{
+            font-size: 30px;
+            font-family: Sans-serif;
+            padding: 10px 30px;
+            padding-top: 100px;
+        }
+        .doc{
+            font-size: 15px;
+            padding-top: 12px;
+        }
+        .box{
+            background-color: #FDFEFE;
+            border: 2px solid #EB984E;
+            margin: 25px 25px;
+            padding: 25px 25px;
+            border-radius: 5px;
+        }
+        .bi-file-earmark{
+            background-color: #FDEBD0;
+            border-radius: 20px;
+            padding: 5px;
+            transform: scale(1.5);
+        }
+        .topic{
+            font-size: 15px;
+            font-family: Sans-serif;
+            color: #17202A;
+        }
+        .size{
+            font-size: 10px;
+            font-family: Sans-serif;
+            color: #A6ACAF ;
+        }
+        .progress{
+            background-color: #FDEBD0;
+        }
+        .progress-bar{
+            background-color: #F5B041;
+            padding: 5px;
+        }
+        .grid1 {
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(22, 1fr);
+        align-items: center;
+        }
+        .grid2 {
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        align-items: center;
+        }
+        .grid-col-1 {
+        grid-column: span 1;
+        }
+        .grid-col-19 {
+        grid-column: span 19;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="File">
+            Files and assets
+            <div class="doc">
+                Document and attachements that have been uploaded as part of this collateral. 
+            </div>
+        </div>
+        <div class="line"></div>
+            <div class="form">
+                <div class="box">
+                        <div class="grid2">
+                        <div class="grid-col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+                            <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                        </svg>
+                        </div>
+                        <div class="grid-col-21">
+                            <div class="topic">
+                                Document 1.pdf
+                            </div>
+                            <div class="size">
+                                500 KB
+                            </div>
+                                <div class="grid2">
+                                    <div class="grid-col-19">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-col-1">
+                                        <span class="percent" style="color: #17202A;">100%</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
